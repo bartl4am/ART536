@@ -15,8 +15,28 @@
             position="0 0 0"
             width="3.9"
             height="2.78"
-            color="#353535">
+            color="#7A6654">
         </a-plane>
+
+        <!-- wall w/ window -->
+        <a-plane
+            rotation="0 90 0"
+            position="-1.95 1.095 0"
+            width="2.78"
+            height="2.2"
+            depth="2.5"
+            color="fff"
+        ></a-plane>
+
+        <!-- wall w/ tv -->
+        <a-plane
+            rotation="-180 0 0"
+            position="-.001 1.1 1.388"
+            width="3.9"
+            height="2.2"
+            depth="2.5"
+            color="fff8dd"
+        ></a-plane>
 
         <!--doorhall-->
         <a-plane	
@@ -24,7 +44,7 @@
             position="1.033 0 -1.945"
             width="1.291"
             height="1.12"
-            color="#353535">
+            color="#7A6654">
         </a-plane>
         <!--rug-->
 
@@ -39,21 +59,69 @@
        
          <!--bed-->
         <a-box
-    position="-1 0.3 -0.44"
+    position="-1 0.4 -0.44"
     depth="1.9"
-    height="0.6"
+    height="0.4"
     width="1.5"
     color="#FFF8DD">
 </a-box>
 
-<!--table-->
-<a-box
-     position="-1 0.5 1.18"
+<!-- pillow -->
+ <a-box
+    position="-0.648 0.647 -1.129"
     depth="0.4"
-    height="0.9"
-    width="0.8"
-    color="#000000">
+    height="0.06"
+    width="0.6"
+    color="#D6EECA">
 </a-box>
+<a-box
+    position="-1.330 0.647 -1.129"
+    depth="0.4"
+    height="0.06"
+    width="0.6"
+    color="#D6EECA">
+</a-box>
+
+<!---bed posts-->
+<a-box
+position="-0.404 0.12 -1.282"
+depth="-0.090"
+height="0.09"
+width="0.090"
+color="fff">    
+</a-box>
+<a-box
+position="-.404 0.12 .293"
+depth="-0.090"
+height="0.09"
+width="0.090"
+color="fff">    
+</a-box>
+<a-box
+position="-1.553 0.12 .293"
+depth="-0.090"
+height="0.09"
+width="0.090"
+color="fff">    
+</a-box>
+<a-box
+position="-1.553 0.12 -1.282"
+depth="-0.090"
+height="0.09"
+width="0.090"
+color="fff">    
+</a-box>
+<!--table-->
+
+    <a-entity id="bookshelf">
+            <a-box rotation="0 0 0" color="#000" width="0.6" depth="0.4" height=".025" position="-1 0.5 1.18"></a-box>
+            <a-box rotation="0 0 0" color="#000" width="0.6" depth="0.4" height=".025" position="-1 0.25 1.18"></a-box>
+            <a-cylinder position="-1.248 .235 1.040" radius="0.025" height=".5" color="#000"></a-cylinder>
+            <a-cylinder position="-0.759 .235 1.040" radius="0.025" height=".5" color="#000"></a-cylinder>
+            <a-cylinder position="-1.248 .235 1.310" radius="0.025" height=".5" color="#000"></a-cylinder>
+            <a-cylinder position="-0.759 .235 1.310" radius="0.025" height=".5" color="#000"></a-cylinder>
+        </a-entity>
+
 
 <!--bookshelf-->
  <a-box
