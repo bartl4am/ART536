@@ -37,6 +37,16 @@
             color="#FEF9E6"
         ></a-plane>
 
+         <!-- wall opposite window -->
+        <a-plane
+            rotation="0 -90 0"
+            position="1.908 1.095 0"
+            width="2.78"
+            height="2.2"
+            depth="2.5"
+            color="#FEF9E6"
+        ></a-plane>
+
         <!-- window -->
          <a-plane
             rotation="0 90 0"
@@ -70,7 +80,7 @@
         <!-- wall opposite tv wall -->
         <a-plane
             rotation="0 0 0"
-            position="-0.036 1.099 -1.393"
+            position="-0.036 1.099 -1.373"
             width="3.9"
             height="2.2"
             depth="2.5"
@@ -183,7 +193,33 @@ color="fff">
     color="#000000">
 </a-box>
 
+<!-- sunset lamp -->
+<a-entity id="lamp">
+        <a-cylinder position="-1.689 .061 1.214" radius="0.035" height=".02" color="#000"></a-cylinder>
+</a-entity>
 
+
+<a-light type="point" intensity="2.05" color="rgb(224, 132, 56)" position="-1.638 0.4 1.145"></a-light>
+
+<a-light type="ambient" intensity="0.2"></a-light>
+
+
+        <a-assets>
+            <a-cubemap id="pisa">
+                <a-cubemap-face src="https://threejs.org/examples/textures/cube/pisa/px.png"/>
+                <a-cubemap-face src="https://threejs.org/examples/textures/cube/pisa/nx.png"/>
+                <a-cubemap-face src="https://threejs.org/examples/textures/cube/pisa/py.png"/>
+                <a-cubemap-face src="https://threejs.org/examples/textures/cube/pisa/ny.png"/>
+                <a-cubemap-face src="https://threejs.org/examples/textures/cube/pisa/pz.png"/>
+                <a-cubemap-face src="https://threejs.org/examples/textures/cube/pisa/nz.png"/>
+            </a-cubemap>
+        </a-assets>
+
+<a-light type="probe" envMap="#pisa"></a-light>
+
+
+<!-- <a-light type="hemisphere" color="#fff" ></a-light> -->
+<!-- <a-light type="spot" intensity="0.5"></a-light> -->
    </a-scene>
    
 
