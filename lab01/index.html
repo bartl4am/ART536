@@ -31,16 +31,27 @@
          <!--ceiling-->
         <a-plane	
             rotation="90 0 0"
-            position="0 2.2 0"
+            position="-.021 2.2 0"
             width="3.9"
             height="2.78"
             color="#EBEAE7">
         </a-plane>	
 
+        <!-- ceiling light -->
+        <a-sphere
+            rotation="0 0 0"
+            position="0 2.2 0"
+            radius="0.15"
+        ></a-sphere>
+
+        <!-- ceiling light - lit -->
+        <a-light type="point" intensity="2.05" color="#e0d0b6" position="0 1.838 0"></a-light>
+        
+
         <!-- wall w/ window -->
         <a-plane
             rotation="0 90 0"
-            position="-1.887 1.095 0"
+            position="-1.944 1.095 0"
             width="2.78"
             height="2.2"
             depth="2.5"
@@ -87,6 +98,18 @@
             color="#FEF9E6"
         ></a-plane>
 
+        <!-- poster wall -->
+         <a-entity>
+            <a-plane 
+                rotation="0 0 0" 
+                position="0 1.1 1.388"
+                width="0.5"
+                height="0.7"
+                depth="0.5"
+                color="fff"
+            ></a-plane>
+         </a-entity>
+
         <!-- wall opposite tv wall -->
         <a-plane
             rotation="0 0 0"
@@ -96,7 +119,16 @@
             depth="2.5"
             color="#FEF9E6"
         ></a-plane>
-        
+
+        <!-- tapestry -->
+        <a-plane
+            rotation="0 0 0"
+            position="-1.008 1.433 -1.364"
+            width="1.5"
+            height="1.420"
+            color="#a8c6fe"
+        ></a-plane>
+
         <!-- door -->
         <a-plane
             rotation="0 0 0"
